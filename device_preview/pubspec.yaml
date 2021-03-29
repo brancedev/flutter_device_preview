@@ -24,13 +24,13 @@ dependencies:
       ref: migrate_flutter_2.0.0
   font_awesome_flutter: ^8.9.0
   http: ^0.13.0
-  freezed_annotation: ^0.14.1
-  json_annotation: ^4.0.0
+  freezed_annotation: ^0.12.0
+  json_annotation: 3.1.1
   path: ^1.8.0-nullsafety.1
 
 dev_dependencies:
-  freezed: ^0.14.1
-  json_serializable: ^4.0.0
+  json_serializable: 3.5.1 # Last version without required null safety
+  freezed: ^0.12.7
   flutter_test:
     sdk: flutter
   build_runner: ^1.10.1
