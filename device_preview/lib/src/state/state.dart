@@ -1,9 +1,9 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../utilities/json_converters.dart';
-import 'package:flutter/foundation.dart';
 
 part 'state.freezed.dart';
 part 'state.g.dart';
@@ -49,7 +49,7 @@ abstract class DevicePreviewData with _$DevicePreviewData {
     @Default(Orientation.portrait) Orientation orientation,
 
     /// The currently selected device.
-    @nullable String deviceIdentifier,
+    String deviceIdentifier,
 
     /// The currently selected device locale.
     @Default('en-US') String locale,
@@ -84,10 +84,10 @@ abstract class DevicePreviewData with _$DevicePreviewData {
 
     /// The current text scaling factor.
     @Default(1.0) double textScaleFactor,
-    @nullable DevicePreviewSettingsData settings,
+    DevicePreviewSettingsData settings,
 
     /// The custom device configuration
-    @nullable CustomDeviceInfoData customDevice,
+    CustomDeviceInfoData customDevice,
   }) = _DevicePreviewData;
 
   factory DevicePreviewData.fromJson(Map<String, dynamic> json) =>
@@ -112,10 +112,7 @@ abstract class CustomDeviceInfoData with _$CustomDeviceInfoData {
     @required String name,
 
     /// The safe areas when the device is in landscape orientation.
-    @Default(null)
-    @nullable
-    @EdgeInsetsJsonConverter()
-        EdgeInsets rotatedSafeAreas,
+    @Default(null) @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
 
     /// The safe areas when the device is in portrait orientation.
     @required @EdgeInsetsJsonConverter() EdgeInsets safeAreas,
