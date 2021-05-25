@@ -21,7 +21,7 @@ dependencies:
     git:
       url: https://github.com/brancedev/flutter_device_preview.git
       path: device_frame
-      ref: migrate_flutter_2.0.0
+      ref: migrate_bloc_7
   font_awesome_flutter: ^8.9.0
   http: ^0.13.0
   freezed_annotation: ^0.12.0
