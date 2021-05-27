@@ -23,7 +23,7 @@ dependencies:
       path: device_frame
       ref: migrate_bloc_7
   font_awesome_flutter: ^8.9.0
-  http: ^0.12.0
+  http: ^0.13.0
   freezed_annotation: ^0.12.0
   json_annotation: 3.1.1
   path: ^1.8.0-nullsafety.1
