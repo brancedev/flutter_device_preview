@@ -17,11 +17,12 @@ dependencies:
   shared_preferences_macos: ^2.0.0
   provider: ^5.0.0
   path_provider: ^2.0.1
-  device_frame: 
+  # Used until everything is fully migrated to null-safety
+  device_frame:
     git:
       url: https://github.com/brancedev/flutter_device_preview.git
       path: device_frame
-      ref: migrate_bloc_7
+      ref: null_save
   font_awesome_flutter: ^8.9.0
   http: ^0.13.0
   freezed_annotation: ^0.12.0

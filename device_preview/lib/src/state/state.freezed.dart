@@ -525,7 +525,7 @@ class _$DevicePreviewDataTearOff {
       {bool isToolbarVisible = true,
       bool isEnabled = true,
       Orientation orientation = Orientation.portrait,
-      @nullable String deviceIdentifier,
+       String deviceIdentifier,
       String locale = 'en-US',
       bool isFrameVisible = true,
       bool isDarkMode = false,
@@ -538,8 +538,8 @@ class _$DevicePreviewDataTearOff {
       Map<String, Map<String, dynamic>> pluginData =
           const <String, Map<String, dynamic>>{},
       double textScaleFactor = 1.0,
-      @nullable DevicePreviewSettingsData settings,
-      @nullable CustomDeviceInfoData customDevice}) {
+       DevicePreviewSettingsData settings,
+       CustomDeviceInfoData customDevice}) {
     return _DevicePreviewData(
       isToolbarVisible: isToolbarVisible,
       isEnabled: isEnabled,
@@ -583,7 +583,7 @@ mixin _$DevicePreviewData {
   Orientation get orientation;
 
   /// The currently selected device.
-  @nullable
+
   String get deviceIdentifier;
 
   /// The currently selected device locale.
@@ -618,11 +618,11 @@ mixin _$DevicePreviewData {
 
   /// The current text scaling factor.
   double get textScaleFactor;
-  @nullable
+
   DevicePreviewSettingsData get settings;
 
   /// The custom device configuration
-  @nullable
+
   CustomDeviceInfoData get customDevice;
 
   Map<String, dynamic> toJson();
@@ -638,7 +638,7 @@ abstract class $DevicePreviewDataCopyWith<$Res> {
       {bool isToolbarVisible,
       bool isEnabled,
       Orientation orientation,
-      @nullable String deviceIdentifier,
+       String deviceIdentifier,
       String locale,
       bool isFrameVisible,
       bool isDarkMode,
@@ -650,8 +650,8 @@ abstract class $DevicePreviewDataCopyWith<$Res> {
       bool invertColors,
       Map<String, Map<String, dynamic>> pluginData,
       double textScaleFactor,
-      @nullable DevicePreviewSettingsData settings,
-      @nullable CustomDeviceInfoData customDevice});
+       DevicePreviewSettingsData settings,
+       CustomDeviceInfoData customDevice});
 
   $DevicePreviewSettingsDataCopyWith<$Res> get settings;
   $CustomDeviceInfoDataCopyWith<$Res> get customDevice;
@@ -764,7 +764,7 @@ abstract class _$DevicePreviewDataCopyWith<$Res>
       {bool isToolbarVisible,
       bool isEnabled,
       Orientation orientation,
-      @nullable String deviceIdentifier,
+       String deviceIdentifier,
       String locale,
       bool isFrameVisible,
       bool isDarkMode,
@@ -776,8 +776,8 @@ abstract class _$DevicePreviewDataCopyWith<$Res>
       bool invertColors,
       Map<String, Map<String, dynamic>> pluginData,
       double textScaleFactor,
-      @nullable DevicePreviewSettingsData settings,
-      @nullable CustomDeviceInfoData customDevice});
+       DevicePreviewSettingsData settings,
+       CustomDeviceInfoData customDevice});
 
   @override
   $DevicePreviewSettingsDataCopyWith<$Res> get settings;
@@ -873,7 +873,7 @@ class _$_DevicePreviewData
       {this.isToolbarVisible = true,
       this.isEnabled = true,
       this.orientation = Orientation.portrait,
-      @nullable this.deviceIdentifier,
+       this.deviceIdentifier,
       this.locale = 'en-US',
       this.isFrameVisible = true,
       this.isDarkMode = false,
@@ -885,8 +885,8 @@ class _$_DevicePreviewData
       this.invertColors = false,
       this.pluginData = const <String, Map<String, dynamic>>{},
       this.textScaleFactor = 1.0,
-      @nullable this.settings,
-      @nullable this.customDevice})
+       this.settings,
+       this.customDevice})
       : assert(isToolbarVisible != null),
         assert(isEnabled != null),
         assert(orientation != null),
@@ -923,7 +923,7 @@ class _$_DevicePreviewData
   @override
 
   /// The currently selected device.
-  @nullable
+
   final String deviceIdentifier;
   @JsonKey(defaultValue: 'en-US')
   @override
@@ -981,12 +981,12 @@ class _$_DevicePreviewData
   /// The current text scaling factor.
   final double textScaleFactor;
   @override
-  @nullable
+
   final DevicePreviewSettingsData settings;
   @override
 
   /// The custom device configuration
-  @nullable
+
   final CustomDeviceInfoData customDevice;
 
   @override
@@ -1113,7 +1113,7 @@ abstract class _DevicePreviewData implements DevicePreviewData {
       {bool isToolbarVisible,
       bool isEnabled,
       Orientation orientation,
-      @nullable String deviceIdentifier,
+       String deviceIdentifier,
       String locale,
       bool isFrameVisible,
       bool isDarkMode,
@@ -1125,8 +1125,8 @@ abstract class _DevicePreviewData implements DevicePreviewData {
       bool invertColors,
       Map<String, Map<String, dynamic>> pluginData,
       double textScaleFactor,
-      @nullable DevicePreviewSettingsData settings,
-      @nullable CustomDeviceInfoData customDevice}) = _$_DevicePreviewData;
+       DevicePreviewSettingsData settings,
+       CustomDeviceInfoData customDevice}) = _$_DevicePreviewData;
 
   factory _DevicePreviewData.fromJson(Map<String, dynamic> json) =
       _$_DevicePreviewData.fromJson;
@@ -1146,7 +1146,7 @@ abstract class _DevicePreviewData implements DevicePreviewData {
   @override
 
   /// The currently selected device.
-  @nullable
+
   String get deviceIdentifier;
   @override
 
@@ -1193,12 +1193,12 @@ abstract class _DevicePreviewData implements DevicePreviewData {
   /// The current text scaling factor.
   double get textScaleFactor;
   @override
-  @nullable
+
   DevicePreviewSettingsData get settings;
   @override
 
   /// The custom device configuration
-  @nullable
+
   CustomDeviceInfoData get customDevice;
   @override
   _$DevicePreviewDataCopyWith<_DevicePreviewData> get copyWith;
@@ -1218,7 +1218,7 @@ class _$CustomDeviceInfoDataTearOff {
       @required DeviceType type,
       @required TargetPlatform platform,
       @required String name,
-      @nullable @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas = null,
+       @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas = null,
       @required @EdgeInsetsJsonConverter() EdgeInsets safeAreas,
       @required double pixelRatio,
       @required @SizeJsonConverter() Size screenSize}) {
@@ -1259,7 +1259,7 @@ mixin _$CustomDeviceInfoData {
   String get name;
 
   /// The safe areas when the device is in landscape orientation.
-  @nullable
+
   @EdgeInsetsJsonConverter()
   EdgeInsets get rotatedSafeAreas;
 
@@ -1288,7 +1288,7 @@ abstract class $CustomDeviceInfoDataCopyWith<$Res> {
       DeviceType type,
       TargetPlatform platform,
       String name,
-      @nullable @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
+       @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
       @EdgeInsetsJsonConverter() EdgeInsets safeAreas,
       double pixelRatio,
       @SizeJsonConverter() Size screenSize});
@@ -1345,7 +1345,7 @@ abstract class _$CustomDeviceInfoDataCopyWith<$Res>
       DeviceType type,
       TargetPlatform platform,
       String name,
-      @nullable @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
+       @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
       @EdgeInsetsJsonConverter() EdgeInsets safeAreas,
       double pixelRatio,
       @SizeJsonConverter() Size screenSize});
@@ -1403,7 +1403,7 @@ class _$_CustomDeviceInfoData
       @required this.type,
       @required this.platform,
       @required this.name,
-      @nullable @EdgeInsetsJsonConverter() this.rotatedSafeAreas = null,
+       @EdgeInsetsJsonConverter() this.rotatedSafeAreas = null,
       @required @EdgeInsetsJsonConverter() this.safeAreas,
       @required this.pixelRatio,
       @required @SizeJsonConverter() this.screenSize})
@@ -1438,7 +1438,7 @@ class _$_CustomDeviceInfoData
   @override
 
   /// The safe areas when the device is in landscape orientation.
-  @nullable
+
   @EdgeInsetsJsonConverter()
   final EdgeInsets rotatedSafeAreas;
   @override
@@ -1532,7 +1532,7 @@ abstract class _CustomDeviceInfoData implements CustomDeviceInfoData {
           @required DeviceType type,
           @required TargetPlatform platform,
           @required String name,
-          @nullable @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
+           @EdgeInsetsJsonConverter() EdgeInsets rotatedSafeAreas,
           @required @EdgeInsetsJsonConverter() EdgeInsets safeAreas,
           @required double pixelRatio,
           @required @SizeJsonConverter() Size screenSize}) =
@@ -1560,7 +1560,7 @@ abstract class _CustomDeviceInfoData implements CustomDeviceInfoData {
   @override
 
   /// The safe areas when the device is in landscape orientation.
-  @nullable
+
   @EdgeInsetsJsonConverter()
   EdgeInsets get rotatedSafeAreas;
   @override

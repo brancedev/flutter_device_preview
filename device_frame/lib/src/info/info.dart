@@ -19,7 +19,7 @@ abstract class DeviceInfo with _$DeviceInfo {
     @required String name,
 
     /// The safe areas when the device is in landscape orientation.
-    @Default(null) @nullable EdgeInsets rotatedSafeAreas,
+    @Default(null)  EdgeInsets rotatedSafeAreas,
 
     /// The safe areas when the device is in portrait orientation.
     @required EdgeInsets safeAreas,

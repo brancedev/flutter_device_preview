@@ -17,7 +17,7 @@ class _$DeviceInfoTearOff {
   _DeviceInfo call(
       {@required DeviceIdentifier identifier,
       @required String name,
-      @nullable EdgeInsets rotatedSafeAreas = null,
+       EdgeInsets rotatedSafeAreas = null,
       @required EdgeInsets safeAreas,
       @required Path screenPath,
       @required double pixelRatio,
@@ -51,7 +51,7 @@ mixin _$DeviceInfo {
   String get name;
 
   /// The safe areas when the device is in landscape orientation.
-  @nullable
+
   EdgeInsets get rotatedSafeAreas;
 
   /// The safe areas when the device is in portrait orientation.
@@ -83,7 +83,7 @@ abstract class $DeviceInfoCopyWith<$Res> {
   $Res call(
       {DeviceIdentifier identifier,
       String name,
-      @nullable EdgeInsets rotatedSafeAreas,
+       EdgeInsets rotatedSafeAreas,
       EdgeInsets safeAreas,
       Path screenPath,
       double pixelRatio,
@@ -143,7 +143,7 @@ abstract class _$DeviceInfoCopyWith<$Res> implements $DeviceInfoCopyWith<$Res> {
   $Res call(
       {DeviceIdentifier identifier,
       String name,
-      @nullable EdgeInsets rotatedSafeAreas,
+       EdgeInsets rotatedSafeAreas,
       EdgeInsets safeAreas,
       Path screenPath,
       double pixelRatio,
@@ -201,7 +201,7 @@ class _$_DeviceInfo with DiagnosticableTreeMixin implements _DeviceInfo {
   const _$_DeviceInfo(
       {@required this.identifier,
       @required this.name,
-      @nullable this.rotatedSafeAreas = null,
+       this.rotatedSafeAreas = null,
       @required this.safeAreas,
       @required this.screenPath,
       @required this.pixelRatio,
@@ -229,7 +229,7 @@ class _$_DeviceInfo with DiagnosticableTreeMixin implements _DeviceInfo {
   @override
 
   /// The safe areas when the device is in landscape orientation.
-  @nullable
+
   final EdgeInsets rotatedSafeAreas;
   @override
 
@@ -331,7 +331,7 @@ abstract class _DeviceInfo implements DeviceInfo {
   const factory _DeviceInfo(
       {@required DeviceIdentifier identifier,
       @required String name,
-      @nullable EdgeInsets rotatedSafeAreas,
+       EdgeInsets rotatedSafeAreas,
       @required EdgeInsets safeAreas,
       @required Path screenPath,
       @required double pixelRatio,
@@ -350,7 +350,7 @@ abstract class _DeviceInfo implements DeviceInfo {
   @override
 
   /// The safe areas when the device is in landscape orientation.
-  @nullable
+
   EdgeInsets get rotatedSafeAreas;
   @override
 
